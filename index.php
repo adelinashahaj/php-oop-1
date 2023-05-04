@@ -1,30 +1,17 @@
 <?php
 require __DIR__ . '/Models/Movie.php';
+require __DIR__ . '/Models/Genere.php';
 
-/* un altro esempio con la classe Genere
-class Genere {
 
-    public $genere1;
-    public $genere2;
-    public $genere3;
-
-    public function __construct($genere1, $genere2, $genere3)
-    {
-        $this->genere1 = $genere1;
-        $this->genere2 = $genere2;
-        $this->genere3 = $genere3;
-    }
-
-}
-
-/* un altro esempio con la classe Genere
+ 
 $generi = [
     new Genere ('azione', 'avventura', 'fantascienza')
 ];
-*/
+
+/* bonus 1
 $generi = [
     'azione', 'avventura', 'fantascienza',
-];
+];*/
 
 $mymovie1 = new Movie('Avengers','Robert Downey Jr', 2015, $generi);
 
@@ -43,23 +30,50 @@ $mymovie2 = new Movie('Capitan America','Chris Avans', 2016, $generi);
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>php-oop-1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="container">
-        <h4>
-            <li> <?php
-                    echo $mymovie1->getInformazioniFilm();
-                    //echo var_dump($mymovie1);
-                    ?>
-            </li>
-            <li> <?php
-                    echo $mymovie2->getInformazioniFilm();
-                     //echo var_dump($mymovie2);
-                    ?>
-            </li>
-        </h4>
+<body class="bg-primary-subtle">
+    <div class="container mt-5">
+       
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0 shadow">
+                <div class="col-md-4">
+                    <img src="img/avengers.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php
+                                        echo $mymovie1->getInformazioniFilm();
+                                        //echo var_dump($mymovie1);
+                                        ?></h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0 shadow">
+                <div class="col-md-4">
+                    <img src="img/cp.america.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php
+                                            echo $mymovie2->getInformazioniFilm();
+                                            //echo var_dump($mymovie1);
+                                            ?></h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    
+                        </div>
+                    </div>
+            </div>
+         </div>
+
     </div>
+
 </body>
 
 </html>

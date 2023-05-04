@@ -23,14 +23,15 @@ class Movie {
     public function getGeneres() {
 
         $generi = '';
-        /* un altro esempio con la classe Genere
+       
         foreach( $this->genere as $gener ) {
-            $generi .= $genere->genere1. ', ' . $genere->genere2. ', ' .$genere->genere3;
-        }*/
+            $generi .= $gener->genere1. ', ' . $gener->genere2. ', ' .$gener->genere3;
+        }
+        /* bonus 1
         foreach( $this->genere as $gener ) {
             $generi .= '-' . $gener . '';
         }
-
+        */
         return $generi;
 
     }
