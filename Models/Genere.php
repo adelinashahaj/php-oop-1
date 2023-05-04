@@ -13,4 +13,6 @@ class Genere {
         $this->genere3 = $genere3;
     }
 
-}
+    
+
+};

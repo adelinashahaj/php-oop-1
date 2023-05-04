@@ -8,7 +8,7 @@ $generi = [
     new Genere ('azione', 'avventura', 'fantascienza')
 ];
 
-/* bonus 1
+/* bonus 1 array senza la classe
 $generi = [
     'azione', 'avventura', 'fantascienza',
 ];*/
@@ -39,7 +39,7 @@ $mymovie2 = new Movie('Capitan America','Chris Avans', 2016, $generi);
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0 shadow">
                 <div class="col-md-4">
-                    <img src="img/avengers.jpg" class="img-fluid rounded-start" alt="...">
+                    <img src="img/avengers.jpg" class="rounded-start" alt="..." style="max-width: 89%;">
                 </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -47,8 +47,6 @@ $mymovie2 = new Movie('Capitan America','Chris Avans', 2016, $generi);
                                         echo $mymovie1->getInformazioniFilm();
                                         //echo var_dump($mymovie1);
                                         ?></h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            
                         </div>
                     </div>
             </div>
@@ -57,16 +55,14 @@ $mymovie2 = new Movie('Capitan America','Chris Avans', 2016, $generi);
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0 shadow">
                 <div class="col-md-4">
-                    <img src="img/cp.america.jpg" class="img-fluid rounded-start" alt="...">
+                    <img src="img/cp.america.jpg" class=" rounded-start" alt="..." style="max-width: 74%;">
                 </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title"><?php
                                             echo $mymovie2->getInformazioniFilm();
-                                            //echo var_dump($mymovie1);
-                                            ?></h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    
+                                            //echo var_dump($mymovie2);
+                                            ?></h5> 
                         </div>
                     </div>
             </div>
