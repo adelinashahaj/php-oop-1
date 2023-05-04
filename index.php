@@ -19,7 +19,7 @@ class Genere {
 
 /* un altro esempio con la classe Genere
 $generi = [
-    new Address ('azione', 'avventura', 'fantascienza')
+    new Genere ('azione', 'avventura', 'fantascienza')
 ];
 */
 $generi = [
