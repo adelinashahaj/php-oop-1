@@ -5,10 +5,11 @@ require __DIR__ . '/Models/Genere.php';
 
  
 $generi = [
-    new Genere ('azione', 'avventura', 'fantascienza')
+    new Genere ( 'avventura'),
+    new Genere ('azione')
 ];
 
-/* bonus 1 array senza la classe
+/* array senza la classe
 $generi = [
     'azione', 'avventura', 'fantascienza',
 ];*/
